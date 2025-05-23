@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stanza X - Web Escape Room</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="css/enigma3.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Escape the Network</h1>
+            <p class="subtitle">Indirizzamento IP</p>
+        </header>
+        
+        <main>
+           
+                <div class="room-header">
+                    <h2 class="room-title">Enigma 3: completa i campi dell'header! </h2>
+                    <div class="room-controls">
+                        <div class="timer-display">Timer: <span id="timer">00:00</span></div>
+                        <div class="hints-counter">Indizi: <span id="contaSugg">0/3</span></div>
+                        <input type="image" src="immagini/lampadina.png" alt="suggerimento" id="hint-btn">
+                    </div>
+            </div>
+
+            <div id="enigma">
+                <table id="frame">
+                    <tr>
+                        <th colspan="5">HEADER</th>
+                        <th>DATA</th>
+                    </tr>
+                    <tr>
+                      <td colspan="1">
+                        <input type="text" size="5" id="Ver" class="input">
+                      </td>
+                      <td colspan="1">
+                        <input type="text" size="5" id="HLEN" class="input">
+                      </td>
+                      <td colspan="1">
+                        <input type="text" size="9" id="TOS" class="input">
+                      </td>
+                      <td colspan="2">
+                        <input type="text" size="20" id="TotalLength" class="input">
+                      </td>
+                      <td rowspan="6" id="campoDati">???</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <input type="text" size="30" id="FragmentIdentification" class="input">
+                        </td>
+                        <td colspan="1">
+                            <input type="text" size="5" id="flags" class="input">
+                        </td>
+                        <td colspan="1">
+                            <input type="text" size="15" id="FragOffset" class="input">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="text" size="9" id="ttl" class="input">
+                        </td>
+                        <td colspan="1">
+                            <input type="text" size="9" id="protocol" class="input">
+                        </td>
+                        <td colspan="2">
+                            <input type="text" size="20" id="headerChecksum" class="input">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">
+                            <input type="text" size="50" id="sourceAddress" class="input">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">
+                            <input type="text" size="50" id="destinationAddress" class="input">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">
+                            <input type="text" size="50" id="options" class="input">
+                        </td>
+                    </tr>
+                </table>
+
+                <div id="divRisp">   
+                    <label><strong>Inserire la risposta del messaggio trasportato: </strong></label>
+                    <input type="text" id="risposta" disabled>
+                    <button id="stanza6" disabled>Entra nella stanza 6</button>
+                </div>
+    
+            </div>
+
+        </main>
+        
+        
+        <div id="sugg1">
+        </div>
+
+        <div id="sugg2">
+        </div>
+
+        <div id="sugg3">
+        </div>
+
+        <footer>
+            <p id="">Web Escape Room - Progetto di Sistemi e Reti 4C <br> Perini Linda, DigirolamoMarco, Battista Sofia</p>
+        </footer>
+
+    </div>
+    
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <script src="js/enigma3.js"></script>
+</body>
+</html>

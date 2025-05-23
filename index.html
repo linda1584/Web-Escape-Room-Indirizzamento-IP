@@ -3,46 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stanza X - Web Escape Room</title>
-    <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="css/enigma3.css">
-    <link rel="stylesheet" href="css/home5.css">
+    <title>Web Escape Room - Sistemi e Reti</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery.min.js"></script>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Escape the Network</h1>
-            <p class="subtitle">Indirizzamento IP</p>
+            <div class="titolo"><img src="./css/images/sono UN GRANDE.png" alt="titolo"></div>
+            <p class="subtitle">Un'avventura nel mondo delle reti informatiche</p>
         </header>
         
         <main>
-           
-                <div class="room-header">
-                    <h2 class="room-title">Stanza 5: Indirizzamento IP </h2>
-                    <div class="room-controls">
-                        <div class="timer-display">Timer: <span id="timer">00:00</span></div>
-                        <div class="hints-counter">Indizi: <span id="contaSugg">0/3</span></div>
-                    </div>
+            <div class="intro-panel">
+                <h2>Benvenuti!</h2>
+                <p>Sei intrappolato in una rete informatica e devi trovare la via d'uscita risolvendo una serie di enigmi sui concetti di Sistemi e Reti.</p>
+                <p>Attraversa tutte le 7 stanze, ciascuna dedicata ad un argomento specifico:</p>
+                
+                <div class="stanze">
+                <p>Stanza 1: Introduzione alle Reti_</p>
+                <p>Stanza 2: Modelli di Riferimento_</p>
+                <p>Stanza 3: Livello Datalink_</p>
+                <p>Stanza 4: Tecnologia Ethernet_</p>
+                <p>Stanza 5: Indirizzamento IP_</p>
+                <p>Stanza 6: Routing_</p>
+                <p>Stanza 7: Protocolli di Rete_</p>
+                </div>
+                
+                <p>In ogni stanza dovrai risolvere tre enigmi per proseguire. Puoi richiedere fino a 3 indizi per stanza se rimani bloccato.</p>
+                
+                <div class="instructions">
+                    <h3>Istruzioni:</h3>
+                    <ul>
+                        <li>Utilizza il pulsante "Indizio" quando sei in difficoltà</li>
+                        <li>Il timer ti mostrerà quanto tempo hai impiegato</li>
+                        <li>Il tuo progresso sarà salvato automaticamente</li>
+                    </ul>
+                </div>
+                
+                <button id="start-btn" class="primary-btn">Inizia l'Avventura</button>
+                <button id="continue-btn" class="secondary-btn" style="display: none;">Continua da dove eri rimasto</button>
             </div>
-
-            <div id="enigmi">
-                <div id="enigma1">
-                    <p>Risolvi il primo enigma!</p>
-                    <button id="inizia1">Inizia</button>
-                </div>    
-            </div>
-
         </main>
         
         <footer>
-            <p id="">Web Escape Room - Progetto di Sistemi e Reti 4C <br> Perini Linda, DigirolamoMarco, Battista Sofia</p>
+            <p>Web Escape Room - Progetto di Sistemi e Reti - Classe 4°C del IIS Blaise Pascal</p>
         </footer>
-
     </div>
     
-    <script src="../../js/jquery.min.js"></script>
-    <script src="../../js/common.js"></script>
-    <script src="js/enigma3.js"></script>
-    <script src="js/home5.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
