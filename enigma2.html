@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enigma 2</title>
+        <link rel="stylesheet" href="../../css/style.css">
+        <link rel="stylesheet" href="css/home5.css">
+        <link rel="stylesheet" href="css/enigma2.css">
+        
+    </head>
+    <body>
+        <header>
+            <h1>Escape the Network</h1>
+            <p class="sottotitolo">Indirizzamento IP</p>
+        </header>
+
+        <main>
+                <div class="room-header">
+                    <h2 class="room-title">Enigma 2: Cruciverba indirizzi IP, risolvi i quesiti e trova la combinazione per poter uscire dall'enigma</h2>
+                    <div class="room-controls">
+                        <div class="timer-display">Timer: <span id="timer">00:00</span></div>
+                        <div class="hints-counter">Indizi: <span id="hints-counter">0/3</span></div>
+                    </div>
+                    <div class="room-footer"> 
+                        <input type="image"  id="hint-btn" src="immagini/lampadina.png" alt="lampadina">
+                    </div>
+                </div>
+
+                <div class="room-content">
+                    <div id="cont-cruciverba"></div>
+                    <div id="domande">
+                        <h4>Domande:</h4>
+                        <ol>
+                            <li>
+                                Subnettare la rete 192.168.1.0 in 4 sottoreti e scrivere l'indirizzo di rete della 2° sottorete
+                            </li>
+                            <li>
+                                Inserisci l'indirizzo di rete dato l'indirizzo 150.100.222.99/25
+                            </li>
+                            <li>
+                                Creare una rete privata che riesca a contere 2048 host
+                            </li>
+                            <li>
+                                Quanti host posso avere data la rete 192.168.7.128/25?
+                            </li>
+                            <li>
+                                Trova l'ultimo indirizzo assegnabile data la rete 10.100.50.128/26
+                            </li>
+                            <li>
+                                Sunbettare la rete 192.168.5.224/27 in 3 sottoreti e inserisci l'indirizzo broadcast della prima sottorete(non saltarne nessuna)
+                            </li>
+                            <li>
+                                Data la rete del 4° quesito trova il modo di creare 4 sottoreti, inserisci l'indirizzo di rete di una sottorete che deve poter contere 62 host
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+
+            <div id="soluzione">
+                <h4>Inserisci il codice per risolvere l'enigma:</h4>
+                <input type="text" id="risposta"><br>
+                <button id="invio">Verifica</button>
+                <div id="risultato"></div>
+            </div>
+            <div class="hint-display" id="hint-display"></div>
+        </main>
+
+        <footer>
+            <p>Web Escape Room - Progetto di Sistemi e Reti 4C</p>
+            <p>Perini Linda, Digirolamo Marco, Battista Sofia</p>
+        </footer>
+
+        <script src="../../js/jquery.min.js"></script>
+        <script src="../../js/common.js"></script>
+        <script src="js/room5.js"></script>
+        <script src="js/enigma2.js"></script>
+    </body>
+</html>

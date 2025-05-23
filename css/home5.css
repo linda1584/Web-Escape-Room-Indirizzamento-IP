@@ -1,0 +1,33 @@
+#enigmi {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    font-size: larger;
+}
+
+#enigmi div {
+    background-color: #1e2a47;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+button {
+    background-color: #ffd700;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:disabled {
+    background-color: #999;
+}
+
+.timer-display, .hints-counter{
+    background-color: #1e2a47;
+    text-align: center;
+    font-size: 18xp;
+    color: white;
+}

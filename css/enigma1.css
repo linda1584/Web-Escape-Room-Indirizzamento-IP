@@ -1,0 +1,203 @@
+
+/* PARTE ENIGMA */
+.container {
+    margin: 20px 0;
+}
+
+h3{
+    color: #1e2a47;
+}
+
+.indirizzi, .zone {
+    display: flex;
+    flex-wrap: wrap;    /*specifica che gli elementi flex devono essere spostati solo se necessario*/ 
+    gap: 10px;
+    margin-top: 15px;
+}
+
+/* ELENCO INDIRIZZI */
+
+.indirizzi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.elemento p{
+    margin: auto;
+}
+
+.elemento {
+    font-weight: bold;
+    color: #1e2a47;
+    display: flex;
+    justify-content: center;  /* allineamento orizzontale */
+    align-items: center;      /* allineamento verticale */
+    width: 160px;
+    height: 70px;
+    font-size: 16px;
+    background-color: #a6b7e8;
+    border: 1px solid #1e2a47;
+    border-radius: 4px;
+    cursor: move;
+    user-select: none; /**/
+}
+
+.elemento.dragging {
+    opacity: 0.5;
+}
+
+/* TABELLE */
+
+.zone{
+    margin-top: 50px;
+    flex-direction: column;
+}
+
+#drop{
+    text-align: center;
+    display: flex;
+    justify-content: center;    /* allinea gli elementi del contenitore flessibile al centro*/
+    gap: 100px;
+}
+
+.zona {
+    width: 220px;
+    height: 80px;
+    border: 2px dashed #1e2a47;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #a6b7e8;
+}
+
+.zona.highlight {
+    border-color: #3498db;
+    background-color: #e3f2fd;
+}
+
+.zona.filled {
+    border-style: solid;
+    border-color: #28a745;
+    background-color: #d4edda;
+}
+
+/* INDIZI*/
+
+.hint-display{
+    margin-top: 40px;
+    text-align: center;
+    background-color: #1e2a47;
+    color: white;
+    border-left: 4px solid white;
+}
+
+
+
+
+/* PAGINA TOTALE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #000000;
+    background: radial-gradient(ellipse at center, #324e7b, #86a6df, #5068a9);
+
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* dispone i figli in colonna altrimenti flex dispone gli elementi in riga (da sinistra a destra)*/
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: #1e2a47 ;
+    color: white;
+    border-radius: 5px;
+}
+
+header h1 {
+    font-size: 2.5rem;  /*la dimensione del testo sarà 2.5 volte la dimensione del font di base del documento*/
+    margin-bottom: 10px;
+}
+
+.sottotitolo {
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+#timer, #hints-counter{
+    width: 1%;
+    border-radius: 5px;
+    font-family: monospace;
+    font-size: 1rem;
+}
+
+/* Main content */
+main {
+    flex: 1;
+}
+
+h2 {
+    color: #1e2a47;
+   /* margin-bottom: 20px;*/
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+#hint-btn{  /*immagine indizio */
+    width: 130px;
+    height: 130px;
+    background-color: transparent;
+}
+
+
+.timer-display, .hints-counter{
+    background-color: #1e2a47;
+    text-align: center;
+    font-size: 18xp;
+    color: white;
+}
+
+.room-controls{
+    align-items: center;  
+    margin: 0 auto;
+    text-align: center;
+    width: 40;
+    display: flex;
+    justify-content: flex-end; /* Allinea gli elementi a destra */
+}
+
+/* TASTO INVIO */
+
+#invio{
+    text-align: center;
+    width: 100px;
+    background-color: #1e2a47;
+    color: white;
+    font-size: 16px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 15px;
+    color: #1e2a47;
+}
